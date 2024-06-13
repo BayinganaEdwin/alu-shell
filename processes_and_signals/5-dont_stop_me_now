@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# killing file 4-to_infinity_and_beyond
+
+
+id=$(pgrep "bash ./4-to_infinity_and_beyond" -f)
+
+if [ -n "$id" ]
+then
+   kill -15 "$id"
+fi   
